@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Forums</title>
+    <link rel="stylesheet" href="../assets/stylesheet/forums-styles.css">
+</head>
+
+<body>
+
+<header>
+<a href="index.html" class="logo">EcoPlates</a>
+<nav class="navigation-tab">
+<ul>
+    <li class="dropdown"> Recipes <span class="chevron">&#9662;</span>
+    <ul class="dropdown-menu">
+        <li><a href="recipes.html?filter=Plant-based">Plant-based</a></li>
+        <li><a href="recipes.html?filter=Local Ingredients">Local Ingredients</a></li>
+        <li><a href="recipes.html?filter=Budget-friendly">Budget-friendly</a></li>
+        <li><a href="recipes.html?filter=Seasonal">Seasonal</a></li>
+        <li><a href="recipes.html">View All</a></li>
+    </ul>
+    </li>
+    
+    <li class="dropdown"> Community <span class="chevron">&#9662;</span>
+    <ul class="dropdown-menu">
+        <li><a href="forums.html">Forums</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="community.html#submissions">Recipe Submission</a></li>
+        <li><a href="community.html#chefs">Chefs of the Week</a></li>
+        <li><a href="community.html">View All</a></li>
+    </ul>
+    </li>
+
+    <li>About Us</li>
+</ul>
+</nav>
+    
+<div class="user-stuff">
+    <input type="text" placeholder="Search recipes..." class="search-bar">
+    <div class="pfp">👤</div>
+</div>
+</header>
+
+<main class="forum-main">
+    <div class="forum-sidebar">
+        <button class="new-discussion">Start New Discussion</button>
+        <ul class="categories">
+            <li data-category="all" class="category-item active">All Discussions</li>
+            <li data-category="cooking-recipes" class="category-item">Cooking & Recipes</li>
+            <li data-category="ingredients" class="category-item">Ingredients</li>
+            <li data-category="cuisine" class="category-item">Cuisine</li>
+            <li data-category="tips-tricks" class="category-item">Tips & Tricks</li>
+            <li data-category="miscellaneous" class="category-item">Miscellaneous</li>
+        </ul>
+    </div>    
+
+    <div class="forum-content">
+        <div class="discussion-header">
+            <select class="sort-dropdown">
+                <option value="latest">Latest First</option>
+                <option value="oldest">Oldest First</option>
+            </select>
+            <input type="text" class="search-bar" placeholder="Search the forum">
+            <button class="mark-read">Mark all as read</button>
+        </div>
+
+        <div class="discussions">
+            <div class="discussion" data-category="cooking-recipes">
+            <h2>Favorite recipes?</h2>
+            <p>Hey what's your favorite recipe? Share them and explain why you love them :D</p>
+                <div class="meta">
+                    <span>25 Comments</span>
+                    <span>Cooking & Recipes</span>
+                </div>
+            </div>
+
+        <div class="discussion" data-category="ingredients">
+            <h2>Ginger reccomendations please</h2>
+            <p>I was given ginger from a friend. Please reccomend some recipes.</p>
+                <div class="meta">
+                    <span>16 Comments</span>
+                    <span>Ingredients</span>
+                </div>
+            </div>
+
+        <div class="discussion" data-category="cuisine">
+            <h2>Opinions on fusion foods?</h2>
+            <p>What's your opinion on fusion foods? I personally don't like them.</p>
+            <div class="meta">
+                <span>47 Comments</span>
+                <span>Cuisine</span>
+            </div>
+        </div>
+
+        <div class="discussion" data-category="tips-tricks">
+            <h2>Any hacks?</h2>
+            <p>Anyone got any cooking hacks? All those "hack" videos and blogs haven't been useful...</p>
+            <div class="meta">
+                <span>21 Comments</span>
+                <span>Tips & Tricks</span>
+            </div>
+        </div>
+
+        <div class="discussion" data-category="miscellaneous">
+            <h2>What foods to bring camping?</h2>
+            <p>I'm going camping with some friends next week. What foods / ingredients should i bring?</p>
+            <div class="meta">
+                <span>36 Comments</span>
+                <span>Miscellaneous</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+<p>&copy; 2024 EcoPlates</p>
+</footer>
+
+<script type="text/javascript" src="../assets/script.js"></script>
+
+</body>
+</html>

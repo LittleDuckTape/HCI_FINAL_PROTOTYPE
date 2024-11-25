@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Challenge</title>
+    <link rel="stylesheet" href="../assets/stylesheet/challenges-styles.css">
+</head>
+
+<body>
+
+<header>
+<a href="index.html" class="logo">EcoPlates</a>
+<nav class="navigation-tab">
+<ul>
+    <li class="dropdown"> Recipes <span class="chevron">&#9662;</span>
+    <ul class="dropdown-menu">
+        <li><a href="recipes.html?filter=Plant-based">Plant-based</a></li>
+        <li><a href="recipes.html?filter=Local Ingredients">Local Ingredients</a></li>
+        <li><a href="recipes.html?filter=Budget-friendly">Budget-friendly</a></li>
+        <li><a href="recipes.html?filter=Seasonal">Seasonal</a></li>
+        <li><a href="recipes.html">View All</a></li>
+    </ul>
+    </li>
+
+    <li class="dropdown"> Community <span class="chevron">&#9662;</span>
+    <ul class="dropdown-menu">
+        <li><a href="forums.html">Forums</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="community.html#submissions">Recipe Submission</a></li>
+        <li><a href="community.html#chefs">Chefs of the Week</a></li>
+        <li><a href="community.html">View All</a></li>
+    </ul>
+    </li>
+
+    <li>About Us</li>
+</ul>
+</nav>
+
+<div class="user-stuff">
+    <input type="text" placeholder="Search recipes..." class="search-bar">
+    <div class="pfp">👤</div>
+</div>
+</header>
+
+<div class="container">
+    <div class="left-card">
+        <div class="sub-card">
+            <h1>Weekly Challenge: Souper Fall Showdown</h1>
+            <h2>Overview:</h2>
+            <p>We invite culinary enthusiasts to create and submit their most delicious, autumn-inspired soups. This seasonal challenge celebrates the flavors 
+            of fall, featuring ingredients like pumpkins, squashes, root vegetables, hearty greens, and warming spices. Whether it's a creamy pumpkin bisque, 
+            a savory butternut squash soup, or a hearty lentil stew, participants are encouraged to experiment with their favorite autumnal ingredients to 
+            craft the perfect comforting bowl.</p>
+
+            <h2>Ingredients:</h2>
+            <p>Each soup should feature at least one seasonal fall / autumn ingredient as its main focus (e.g., root vegetables, squash, fall herbs). 
+            Creativity is encouraged, but the recipe should embrace the spirit of fall.</p>
+
+            <h2>Reward:</h2>
+            <p>The three winners (as voted by the community) will appear as "Chef of the Week" and receive a shout-out! 
+            The user's profile and submission will appear on our social media alongside their placement rank.</p>
+        </div>
+
+        <div class="sub-card">
+            <h2>Submit Your Recipe</h2>
+            <form>
+            <label for="recipe-title">Recipe Name:</label>
+            <input type="text" id="recipe-title" name="recipe-title" placeholder="Recipe Title"required>
+
+            <label for="instructions">Description:</label>
+            <textarea id="instructions" name="instructions" placeholder="Write a description..."required></textarea>
+
+            <label for="upload-image">Upload Image:</label>
+            <input type="file" id="upload-image" name="upload-image"required>
+
+            <button type="submit">Submit Recipe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="right-card">
+        <div class="sub-card">
+            <div class="entries">
+                <img src="../assets/images/chestnut-soup.jpeg">
+                <div class="info">
+                    <h3>Chestnut Soup</h3>
+                    <div class="stars">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+                    <p>Here's my mother's chestnut soup recipe. I hope it wins!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-card">
+            <div class="entries">
+                <img src="../assets/images/parsnip-and-pear-soup.jpg">
+                <div class="info">
+                    <h3>Parsnip and Pear Soup</h3>
+                    <div class="stars">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+                    <p>I thought using pears would be an interesting idea. Made the soup a bit sweeter.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-card">
+            <div class="entries">
+                <img src="../assets/images/wild-mushroom-soup.jpg">
+                <div class="info">
+                    <h3>Wild Mushroom Soup</h3>
+                    <div class="stars">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+                    <p>Saw some mushrooms outside my house. After checking turns out they are edible! Wanted to try a new recipe out, I think it tasted quite good.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-card">
+            <div class="entries">
+                <img src="../assets/images/turkey-wild-rice-soup.jpg">
+                <div class="info">
+                    <h3>Turkey & Wild Rice Soup</h3>
+                    <div class="stars">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+                    <p>Had some leftover turkey from Thanksgiving dinner. Happy fall season !!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-card">
+            <div class="entries">
+                <img src="../assets/images/cabbage-sausage-soup.jpg">
+                <div class="info">
+                    <h3>Cabbage and Sausage Soup</h3>
+                    <div class="stars">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+                    <p>I wasn't sure if this counts (it doesn't have any fall related ingredients) but I always think of autumn whenever I eat it. It just gives fall vibes idk.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+<p>&copy; 2024 EcoPlates</p>
+</footer>
+
+<script type="text/javascript" src="../assets/script.js"></script>
+
+</body>
+</html>
