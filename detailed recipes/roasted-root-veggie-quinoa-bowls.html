@@ -5,42 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roasted Root Veggie Quinoa Bowls</title>
-    <link rel="stylesheet" href="../assets/stylesheet/detailed-recipe-styles.css">
+    <link rel="stylesheet" href="assets/stylesheet/detailed-recipe-styles.css">
+    <link rel="stylesheet" href="assets\stylesheet\login-styles.css">
 </head>
 
 <body>
 
 <header>
-<a href="../index.html" class="logo">EcoPlates</a>
+<a href="index.html" class="logo">EcoPlates</a>
 <nav class="navigation-tab">
 <ul>
     <li class="dropdown"> Recipes <span class="chevron">&#9662;</span>
     <ul class="dropdown-menu">
-        <li><a href="../recipes.html?filter=Plant-based">Plant-based</a></li>
-        <li><a href="../recipes.html?filter=Local Ingredients">Local Ingredients</a></li>
-        <li><a href="../recipes.html?filter=Budget-friendly">Budget-friendly</a></li>
-        <li><a href="../recipes.html?filter=Seasonal">Seasonal</a></li>
-        <li><a href="../recipes.html">View All</a></li>
+        <li><a href="recipes.html?filter=Plant-based">Plant-based</a></li>
+        <li><a href="recipes.html?filter=Local Ingredients">Local Ingredients</a></li>
+        <li><a href="recipes.html?filter=Budget-friendly">Budget-friendly</a></li>
+        <li><a href="recipes.html?filter=Seasonal">Seasonal</a></li>
+        <li><a href="recipes.html">View All</a></li>
     </ul>
     </li>
-    
+
     <li class="dropdown"> Community <span class="chevron">&#9662;</span>
     <ul class="dropdown-menu">
-        <li><a href="../forums.html">Forums</a></li>
-        <li><a href="../challenges.html">Challenges</a></li>
-        <li><a href="../community.html#submissions">Recipe Submission</a></li>
-        <li><a href="../community.html#chefs">Chefs of the Week</a></li>
-        <li><a href="../community-v2.html">View All</a></li>
+        <li><a href="forums.html">Forums</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="community.html#submissions">Recipe Submission</a></li>
+        <li><a href="community.html#chefs">Chefs of the Week</a></li>
+        <li><a href="community-v2.html">View All</a></li>
     </ul>
     </li>
 
     <li>About Us</li>
 </ul>
-</nav> 
+</nav>
 
 <div class="user-stuff">
     <input type="text" placeholder="Search recipes..." class="search-bar">
-    <div class="pfp">👤</div>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+<script src="assets\login.js"></script>
 </div>
 </header>
 
@@ -48,7 +71,7 @@
     <div class="main-container">
     <h1 class="recipe-title">Roasted Root Veggie Quinoa Bowls</h1>
         <div class="image-container">
-        <img src="../assets/images/roasted-root-veggie-quinoa-bowls.jpg" class="recipe-image">
+        <img src="assets/images/roasted-root-veggie-quinoa-bowls.jpg" class="recipe-image">
             <div class="rating">
                 <span>Rating:</span>
                 <span class="stars">★ ★ ★ ★ ★</span>
